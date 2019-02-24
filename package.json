@@ -1,0 +1,28 @@
+{
+  "name": "nodecg-rx",
+  "version": "0.1.1",
+  "description": "RxJS integration for NodeCG",
+  "main": "dist/nodecg-rx.js",
+  "umd:main": "dist/nodecg-rx.umd.js",
+  "module": "dist/nodecg-rx.mjs",
+  "source": "src/index.ts",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "microbundle --output ./dist/"
+  },
+  "keywords": [
+    "rxjs",
+    "nodecg"
+  ],
+  "author": "Nils-Börge Margotti",
+  "license": "GPL-3.0-only",
+  "devDependencies": {
+    "microbundle": "^0.10.1",
+    "rxjs": "^6.4.0",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.3333"
+  },
+  "peerDependencies": {
+    "rxjs": "^6.4.0"
+  }
+}
