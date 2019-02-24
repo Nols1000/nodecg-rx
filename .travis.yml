@@ -1,0 +1,17 @@
+language: node_js
+
+node_js:
+  - stable
+
+script:
+  - npm run build
+
+deploy:
+  - provider: npm
+    skip_cleanup: true
+    email: nilsmargotti@gmail.com
+    api_key:
+      secure: uIV8fvm5j/BqHiCZWOfFMoAKIVgC85C/opcqfHYDxahizFJEZIf1ddEXvtswSul02dfrr73LuPfldumlQkGHeNYBMu/340d+Zw4z8MvedUJZKdDev7u62SL75FvbiYn8OAsal7BRFt8yzT4NzDwR/elRYTZBTMz7pNskBmPF1vaPMV/3kVqexzuEN0wKMV/bN0j8tu5JBi/avjS/mQnBC70Xb7y8ZScwUcLgU7b0H3lc6PpkBRoy/Tf8UAedcDcA81lvW1L+WqxB6n769i8+N5guP9+O4ZqcRQqNjSL9gjHQqE9zTTHfe5EKR1l5990zauSokQndgCmM5SQLSPOqQnnfjCYxH6yZK1FqgBazSu+5YtPvnQzH36aL7NzIb3hV1SDTykCdfauMHERfxje+rXnr+ZILsJcw2sHbRsHscGdNRRqIdFm65sX8mmo6RPQtBJdSw3to2I9HyEW9I8D6fQoRoz/3juPFh+j+TfW7nwOcqbTg8O08jAZenSPN/zRoSo1I7w/mCCHMor1VUfBhs11THiRM1yDo69hNDyCZQz2pMIo/5lPBADw1MXtpwOTcGWlv/RE5ot7VpplhYy+qVZcQFpkK0KlldCI+0dEN5KbmPDsIGdhYcYjJS/EglsDe+FGPZ3S5e0TrdO1LjwkiHiKkGWTWFR0HWaPR+nFyjyY=
+    on:
+      tags: true
+      repo: Nols1000/nodecg-rx
