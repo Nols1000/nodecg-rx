@@ -42,7 +42,7 @@ npm run test
 
 ## Built With
 
-* [microbundle](https://www.npmjs.com/package/microbundle) - a zero-configuration bundler for tiny modules, powered by [Rollup](https://rollupjs.org/guide/en)
+* [webpack](https://webpack.js.org/) - a bundler for javascript and friends
 * [RxJS](https://rxjs.dev/) - a library for reactive programming using Observables, to make it easier to compose asynchronous or callback-based code
 * [NodeCG](https://nodecg.com) - a broadcast graphics framework and application
 
